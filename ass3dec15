@@ -1,0 +1,13 @@
+n=int(input('enter how many values you want to enter: '))
+l=list(map(int,input().split()))
+tv=int(input('enter target value: '))
+check=0
+for i in range(0,n):
+    for j in range(i+1,n):
+        if l[i]-l[j]==tv or l[j]-l[i]==tv:
+            check=1
+            break
+if check==1:
+    print("yes")
+else:
+    print('no')
