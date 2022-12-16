@@ -1,0 +1,18 @@
+s=input('enter a string: ')
+count=0
+for i in s:
+    if i.isalpha():
+        count=count+1
+print(count)        
+
+s=input('enter a string to change to uppercase letters: ')
+up=s.upper()
+print(up)
+
+s=input('enter a string to change to lowercase letters: ')
+lower=s.lower()
+print(lower)
+
+s=input('enter a string with both upper and lowercase letters: ')
+upandlp=s.swapcase()
+print(upandlp)
