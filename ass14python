@@ -11,3 +11,5 @@ while result!=1 and result!=4:
     result=hpnum(result)
 if result==1:
     print('happy number')
+else:
+    print('not happy number')
