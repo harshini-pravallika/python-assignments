@@ -1,0 +1,15 @@
+n=input("Enter Number: ")
+l=list(n)
+print(max(l))
+print(min(l))
+
+n=int(input('enter a number: '))
+l=[]
+rem=0
+temp=n
+while n>0:
+    rem=n%10
+    l.append(rem)
+    n=n//10
+l.sort()
+print('minimum value is:',l[0],'maximum value is:',l[-1])
