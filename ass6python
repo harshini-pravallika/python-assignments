@@ -1,0 +1,15 @@
+def hpnum(n):
+    rem=sum=0
+    while n>0:
+        rem=n%10
+        sum=sum+(rem*rem)
+        n=n//10
+    return sum    
+n=int(input('enter a number: '))
+result=n
+while result!=1 and result!=4:
+    result=hpnum(result)
+if result==1:
+    print('happy number')
+else:
+    print('not happy number')
