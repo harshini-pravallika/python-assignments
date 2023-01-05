@@ -1,0 +1,16 @@
+n=int(input('enter matrix size: '))
+matrix=[]
+diagonals=[]
+for i in range(n):
+    l=[]
+    for j in range(n):
+        x=int(input('enter a number: '))
+        l.append(x)
+    matrix.append(l)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            diagonals.append(matrix[i][j])
+        if i+j==n-1:
+            diagonals.append(matrix[i][j])
+print(max(diagonals)) 
