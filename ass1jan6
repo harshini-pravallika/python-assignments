@@ -1,0 +1,4 @@
+n=int(input('enter no.of elements you want to enter: '))
+l=list(map(int,input().split()))
+u=set(l)
+print(u)
