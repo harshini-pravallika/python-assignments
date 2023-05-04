@@ -1,0 +1,11 @@
+s=input()
+d={}
+for i in s:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]+=1
+l=list(d.values())
+for i in d:
+    if d[i]==max(l):
+        print(i,max(l))
