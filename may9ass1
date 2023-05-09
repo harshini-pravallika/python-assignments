@@ -13,9 +13,7 @@ def solve(a,b):
     for i in range(a,b):
         if sieve[i]==1 and sieve[i+2]==1 and b-i>=2:
             c.append(i)
-    return c        
-    
-    return sieve
+    return c
 
 
 start,end=map(int,input('give 2 numbers: ').split())
